@@ -1,10 +1,10 @@
 import { Resume } from "../../Components/Resume/Resume";
 import { IoMdGrid, IoMdColorPalette, IoMdColorFilter } from "react-icons/io";
-import { FaAlignCenter, FaAlignLeft, FaAlignRight, FaBold, FaEye, FaFileImage, FaFilePdf, FaFirstOrder, FaIndent, FaListOl, FaListUl, FaOutdent, FaPalette, FaPen, FaRedo, FaRulerHorizontal, FaStrikethrough, FaUnderline, FaUndo } from "react-icons/fa";
+import { FaAlignCenter, FaAlignLeft, FaAlignRight, FaBold, FaEye, FaFileImage, FaFilePdf, FaFirstOrder, FaHeart, FaIndent, FaListOl, FaListUl, FaOutdent, FaPalette, FaPen, FaRedo, FaRulerHorizontal, FaStrikethrough, FaUnderline, FaUndo } from "react-icons/fa";
 import * as Template from '../../Components/Resume/Templates'
 import "./create.scss";
 import { Link, useParams } from "react-router-dom";
-import { createRef, useEffect, useRef, useState } from "react";
+import { createRef, Fragment, useEffect, useRef, useState } from "react";
 import ReactToPdf from 'react-to-pdf'
 
 
@@ -42,8 +42,10 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
         <span className="text"> Templates</span>
         </Link>
       </li>
-      
-      <li className="option">
+      {
+     typeof preview !== 'undefined' && (
+     <Fragment>
+        <li className="option">
         <span className="text">Tools</span>
         <div className="tools">
           <button className="button" onClick={()=> Format('undo')}><FaUndo /></button>
@@ -80,16 +82,14 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
         </div>
       </li> 
 
-    {
-     typeof preview !== 'undefined' && (
+ 
         <li className="option" onClick={()=> changePreview &&  changePreview() }>
         <span>
           {!preview ?  <FaPen/> : <FaEye />} {" "}
         </span>
         <span className="text"> {!preview ? 'Edit': 'Preview'} </span>
       </li>
-      )
-    }
+
 
       <li className="option">
         <span>
@@ -97,7 +97,9 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
         </span>
         <span className="text"> Colors</span>
       </li>
-
+     </Fragment>
+      )
+    }
       <li>
       {
         (preview == false) && (
@@ -116,7 +118,7 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
         )
       }
       </li>
-      <li>
+      {/* <li>
         {
            (preview == false) && (
             <button id="export" className="export-image">
@@ -126,11 +128,11 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
            )  
         }
        
-      </li>
+      </li> */}
 
-      {/* <li className="me">
-             <p>Made by <b>Timi-Leyin with love. React </b></p>
-         </li> */}
+      <li className="me">
+             <p>Made with <FaHeart style={{color:'red'}} />  by  <a style={{textDecoration:'underline'}} target='_blank' href="https://timileyin.netlify.app">me</a> </p>
+         </li>
     </ul>
   </div>
   )

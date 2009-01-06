@@ -10,6 +10,8 @@ const Templates = () => {
        <div className="resume-templates">
 <div>
 <Link to={'/create/Orea'} > Orea </Link>
+<Link to={'/create/Niko'} > Niko </Link>
+<Link to={'/create/Niko2'} > Niko2 </Link>
 <Link to={'/create/Colorful'} > ColorFul </Link>
 <Link to={'/create/Minimal'} > Minimal </Link>
 </div>
