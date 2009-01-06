@@ -71,6 +71,7 @@
     .resume-panel{
 
         *[data-editable]{
+            position: relative;
             border:1.4px solid transparent;
         }
         
@@ -84,9 +85,12 @@
             transition: inherit;
                 margin: 0  10px;
                 position: absolute;
+                bottom:0;
+                left:0;
+                transform: translateY(100%);
                 font-size:11px !important;
                 font-weight: 300 !important; 
-                content:'Click to edit';
+                // content:'Click to edit';
                 opacity:0;
             }
            

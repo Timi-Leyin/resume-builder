@@ -1,0 +1,132 @@
+// #resume.resume-buillder-template{
+//     background:rgb(246, 246, 246)
+// }
+
+.niko{
+    font-family:monospace;
+&.niko2{
+    // background:rgb(50, 50, 50);
+    color:#fff
+}
+  .head{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      position: relative;
+      justify-content: space-between;
+  }
+  h2.title{
+    padding:6px 0;
+}
+  .title{
+      font-size: 1.2rem;
+      opacity:.7;
+      text-transform: uppercase;
+      &.small,&>small{
+          font-size: 0.8rem;
+      }
+  }
+
+
+  .contacts{
+      .con{
+          display:flex;
+          align-items: center;
+          padding:3px 0;
+          gap:0 10px;
+          max-width:200px;
+          .icon{
+              width:30px;
+              height: 30px;
+              flex-shrink: 0;
+              color:#fff;
+              font-size:15px;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              border-radius: 50px;
+              background:#222
+          }
+          .info{
+              font-size:10px
+          }
+      }
+  }
+
+
+  .about{
+    //   height:inherit;
+    //   opacity:.3;
+      .about-intro{
+          display:flex;
+          flex-direction: column;
+          &>*:first-child{
+              font-size: 1.4rem;
+              margin:10px 0;
+          }
+         
+      }
+  }
+
+
+  .middle .title{
+      padding:20px 0
+  }
+  .middle .head{
+      display:flex;
+  }
+  .work-skills{
+      position: relative;
+      display: flex;
+      gap:8px;
+      flex-direction: column;
+
+      &>*:nth-child(even){
+          &>*:first-child{
+              order:2
+          }
+      }
+      .skill{
+          width:100%;
+          display: flex;
+          gap:8px;
+          font-size: 10px;
+          &>*{padding:4px 25px;border-radius: 20px;}
+          &>*:first-child{
+              background-color: #222;
+              color:#fff;
+              flex:1
+          }
+          &>*:last-child{
+              background-color: #ddd;
+              color:#222;
+          }
+      }
+  }
+
+
+
+  .body{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap:0 15px;
+      padding:20px 0;
+      justify-content: space-between;
+      .title{
+          padding:10px 0
+      }
+
+      .xp{
+          padding-bottom:10px
+      }
+
+      .ed {
+          padding-bottom:6px;
+          small{
+              padding:6px 0    ;
+              display: block;
+          }
+      }
+  }
+
+
+}
