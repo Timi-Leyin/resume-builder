@@ -1,0 +1,68 @@
+#resume.resume-buillder-template{
+    width:400px;
+    height:600px;
+    padding:25px;
+    margin:auto;
+    background:#fff;
+}
+
+
+.minimal{
+    
+    .r_header{
+        display: flex;
+        // align-items: center;
+        gap:20px;
+
+        .r_basic-info{
+            flex:1
+        }
+        .r__name{
+          font-size: 1.9rem;
+        }
+        .r__role{
+            font-weight:300
+        }
+
+        .r_address{
+            font-size:12px;
+            align-self: flex-end;
+            text-align: right;
+            &> *{
+                padding:1px 0;
+            }
+        }
+    }
+    .r_about{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .r_body{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns:0.6fr 1fr;
+        gap:10px;
+
+        .xp-group{
+            margin:4px 0  10px 0;
+        }
+
+        .r_xp_head{
+            display:grid;
+            grid-template-columns: auto 1fr;
+            justify-content:space-around;
+            gap:5px;
+
+            .date{
+                font-size:10px
+            }
+        }
+
+        .r_xp_body{
+            font-size:10px;
+            margin:2px
+        }
+
+
+    }
+}

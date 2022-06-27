@@ -1,0 +1,85 @@
+#resume-create{
+    display:grid;
+    margin: 20px;
+    grid-template-columns: auto 1fr;
+    gap:20px;
+
+
+    .options-panel{ 
+        .logo{
+            font-weight: 400;
+            &>*:nth-child(2){
+                font-size:1rem
+            }
+        }
+
+        #options{
+            margin:40px 0;
+            list-style: none;
+            &>li{
+                padding:10px 0;
+                cursor: pointer;
+                & .text{
+                    font-size:14px;
+                }
+            }
+        }
+
+        #export{
+            padding:12px 16px;
+            border-radius: 6px;
+            font-size:12px;
+            font-family: inherit;
+            background:var(--accent-color);
+            color:var(--accent-foreground-color);
+            font-weight:bold;
+            border:none;
+            cursor: pointer;
+        }
+    }
+
+    
+    .resume-panel{
+
+
+        *[data-editable='true']{
+            cursor: pointer;
+            pointer-events:all ;
+            outline:none;
+            border:1.4px solid transparent;
+            transition: 0.2s;
+            &:after{
+            transition: inherit;
+                margin: 0  10px;
+                position: absolute;
+                font-size:11px !important;
+                font-weight: 300 !important; 
+                content:'Click to edit';
+                opacity:0;
+            }
+           
+
+          &:hover{
+            border-color: red ;
+            background:rgb(255, 162, 162);
+            &:after{
+                opacity:1;
+            }
+          }
+
+          &:focus{
+            border-color: red ;
+              &:after{
+                 opacity:0
+              }
+          }
+
+        }
+
+
+
+    
+
+
+    }
+}
