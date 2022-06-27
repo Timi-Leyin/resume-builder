@@ -205,11 +205,13 @@ Earum reprehenderit, esse iusto vel necessitatibus sint iure quo debitis nihil r
 }
 
 
-export const Test = ()=>{
+
+// Copy : Do not edit Default Component
+export const Default = ()=>{
   return(
     <Resume>
     <div className="test">
-        test
+       A new blank Template
     </div>
    </Resume>
   )
