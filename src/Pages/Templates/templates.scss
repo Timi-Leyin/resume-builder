@@ -1,0 +1,10 @@
+.resume-templates{
+display: flex;
+gap:20px;
+flex-wrap: wrap;
+
+&>*{
+// transform: scale(.5);
+transform-origin: 0;
+}
+}

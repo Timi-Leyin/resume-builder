@@ -3,13 +3,21 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Preloader } from "./Components/Preloader/Preloader";
 
 const PageNotFound = lazy(() => import("./Pages/PageNotFound"));
+const Templates = lazy(() => import("./Pages/Templates/Templates"));
 const Create = lazy(() => import("./Pages/Create/Create"));
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/create"
+        <Route path="/templates"
+          element={
+            <Suspense fallback={<Preloader />}>
+              <Templates />
+            </Suspense>
+          }
+        />
+        <Route path="/create/:name"
           element={
             <Suspense fallback={<Preloader />}>
               <Create />
