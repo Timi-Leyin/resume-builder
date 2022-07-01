@@ -19,6 +19,23 @@
             &>li{
                 padding:10px 0;
                 cursor: pointer;
+                .tools{
+                    display:flex;
+                    flex-wrap:wrap;
+                    .button{
+                        padding:5px;
+                        margin:4px;
+                        display:flex;
+                        
+                        cursor:pointer;
+                        background:#242424;
+                        color:#fff;
+                        border:none;
+                        &hover,&:focus{
+                            opacity:.7
+                        }
+                    }
+                }
                 & .text{
                     font-size:14px;
                 }
@@ -41,7 +58,10 @@
     
     .resume-panel{
 
-
+        *[data-editable]{
+            border:1.4px solid transparent;
+        }
+        
         *[data-editable='true']{
             cursor: pointer;
             pointer-events:all ;

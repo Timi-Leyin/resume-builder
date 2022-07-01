@@ -1,6 +1,6 @@
 import { Resume } from "../../Components/Resume/Resume";
 import { IoMdGrid, IoMdColorPalette, IoMdColorFilter } from "react-icons/io";
-import { FaEye, FaFilePdf, FaPen } from "react-icons/fa";
+import { FaAlignCenter, FaAlignLeft, FaAlignRight, FaBold, FaEye, FaFilePdf, FaFirstOrder, FaIndent, FaListOl, FaListUl, FaOutdent, FaPen, FaRedo, FaRulerHorizontal, FaStrikethrough, FaUnderline, FaUndo } from "react-icons/fa";
 import * as Template from '../../Components/Resume/Templates'
 import "./create.scss";
 import { Link, useParams } from "react-router-dom";
@@ -9,7 +9,9 @@ import { useState } from "react";
 
 
 export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boolean})=>{
-
+  const Format = (command:string,value?:string ) => {
+    document.execCommand(command,false,value)
+  }
   return(
     <div className="options-panel">
     <h1 className="logo">
@@ -25,6 +27,32 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
         </span>
         <span className="text"> Templates</span>
         </Link>
+      </li>
+      <li className="option">
+        <span className="text">Tools</span>
+        <div className="tools">
+          <button className="button" onClick={()=> Format('undo')}><FaUndo /></button>
+          <button className="button" onClick={()=> Format('redo')}><FaRedo /></button>
+
+          <button className="button" onClick={()=> Format('bold')}><FaBold /></button>
+          <button className="button"  onClick={()=> Format('underline')}><FaUnderline /></button>
+          <button className="button"  onClick={()=> Format('strikeThrough')}><FaStrikethrough /></button>
+          
+          
+          <button className="button"  onClick={()=> Format('insertOrderedList')}><FaListOl /></button>
+          <button className="button"  onClick={()=> Format('insertUnorderedList')}><FaListUl /></button>
+        
+          <button className="button"  onClick={()=> Format('justifyLeft')}><FaAlignLeft /></button>
+          <button className="button"  onClick={()=> Format('justifyCenter')}><FaAlignCenter /></button>
+          <button className="button"  onClick={()=> Format('justifyRight')}><FaAlignRight /></button>
+         
+         
+          <button className="button"  onClick={()=> Format('InsertHorizontalRule')}><FaRulerHorizontal /></button>
+          
+          <button className="button"  onClick={()=> Format('indent')}><FaIndent /></button>
+          <button className="button"  onClick={()=> Format('outdent')}><FaOutdent /></button>
+          {/* <button className="button"></></button> */}
+        </div>
       </li>
 
     {
