@@ -1,6 +1,6 @@
 import { Resume } from "../../Components/Resume/Resume";
 import { IoMdGrid, IoMdColorPalette, IoMdColorFilter } from "react-icons/io";
-import { FaAlignCenter, FaAlignLeft, FaAlignRight, FaBold, FaEye, FaFilePdf, FaFirstOrder, FaIndent, FaListOl, FaListUl, FaOutdent, FaPen, FaRedo, FaRulerHorizontal, FaStrikethrough, FaUnderline, FaUndo } from "react-icons/fa";
+import { FaAlignCenter, FaAlignLeft, FaAlignRight, FaBold, FaEye, FaFilePdf, FaFirstOrder, FaIndent, FaListOl, FaListUl, FaOutdent, FaPalette, FaPen, FaRedo, FaRulerHorizontal, FaStrikethrough, FaUnderline, FaUndo } from "react-icons/fa";
 import * as Template from '../../Components/Resume/Templates'
 import "./create.scss";
 import { Link, useParams } from "react-router-dom";
@@ -51,6 +51,11 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
           
           <button className="button"  onClick={()=> Format('indent')}><FaIndent /></button>
           <button className="button"  onClick={()=> Format('outdent')}><FaOutdent /></button>
+        
+        
+          <button className="button"  onClick={()=> Format('foreColor')}><FaPalette /></button>
+        
+        
           {/* <button className="button"></></button> */}
         </div>
       </li>
