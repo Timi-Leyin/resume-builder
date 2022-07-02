@@ -60,6 +60,10 @@
             font-weight:bold;
             border:none;
             cursor: pointer;
+
+            &.export-image{
+                background:rgb(63, 63, 204);
+            }
         }
     }
 

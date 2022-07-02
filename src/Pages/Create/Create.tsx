@@ -1,6 +1,6 @@
 import { Resume } from "../../Components/Resume/Resume";
 import { IoMdGrid, IoMdColorPalette, IoMdColorFilter } from "react-icons/io";
-import { FaAlignCenter, FaAlignLeft, FaAlignRight, FaBold, FaEye, FaFilePdf, FaFirstOrder, FaIndent, FaListOl, FaListUl, FaOutdent, FaPalette, FaPen, FaRedo, FaRulerHorizontal, FaStrikethrough, FaUnderline, FaUndo } from "react-icons/fa";
+import { FaAlignCenter, FaAlignLeft, FaAlignRight, FaBold, FaEye, FaFileImage, FaFilePdf, FaFirstOrder, FaIndent, FaListOl, FaListUl, FaOutdent, FaPalette, FaPen, FaRedo, FaRulerHorizontal, FaStrikethrough, FaUnderline, FaUndo } from "react-icons/fa";
 import * as Template from '../../Components/Resume/Templates'
 import "./create.scss";
 import { Link, useParams } from "react-router-dom";
@@ -30,6 +30,7 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
         <span className="text"> Templates</span>
         </Link>
       </li>
+      
       <li className="option">
         <span className="text">Tools</span>
         <div className="tools">
@@ -55,15 +56,17 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
           <button className="button"  onClick={()=> Format('outdent')}><FaOutdent /></button>
         
         
-          <button className="button fore-color-tool" style={{backgroundColor:foreColor}} onClick={()=> Format('foreColor',foreColor)}>
-          <input type="color" onChange={(e)=>  setForeColor(e.target.value)} name="foreColor" id="foreColor" />
+          <button className="button fore-color-tool" style={{backgroundColor:foreColor}} >
+          <input type="color" onChange={(e)=>{
+         Format('foreColor',foreColor)
+          setForeColor(e.target.value)
+        }} name="foreColor" id="foreColor" />
         <FaPalette />
           </button>
         
-        
-          {/* <button className="button"></></button> */}
+      
         </div>
-      </li>
+      </li> 
 
     {
      typeof preview !== 'undefined' && (
@@ -87,6 +90,12 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
         <button id="export">
           <FaFilePdf />
           <span> Export PDF</span>
+        </button>
+      </li>
+      <li>
+        <button id="export" className="export-image">
+          <FaFileImage />
+          <span> Export Image</span>
         </button>
       </li>
 
