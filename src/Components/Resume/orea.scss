@@ -1,3 +1,83 @@
 .orea{
-    
+    .header{
+        margin-bottom:30px;
+        .head{
+            font-size:2.43rem
+        }
+    }
+
+
+    .section-rule{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:10px 0;
+        gap:20px;
+
+        .section-id{
+            font-size:14px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        hr{
+            width:100%;
+            padding:1px;
+            border:none
+        }
+    }
+
+
+
+    .introduction-section{
+    font-size: 12px;
+    display:grid;
+    gap:20px;
+    grid-template-columns: auto 1fr;
+
+    .intro-contact{
+        .contact{
+            display:flex;
+            margin:10px 0;
+            align-items: center;
+            gap:6px;
+            // .text{
+            //     font-size:12px;
+            // }
+        }
+    }
+    }
+
+
+
+    .education-section{
+        // display:flex;
+      .cloned,.cloned-parent{
+        // display:grid;
+        grid-template-columns: repeat('auto-fit',minmax(1fr, 200px));
+        margin:10px 0;
+        flex-wrap:wrap;
+        gap:10px; 
+        .edu{
+            margin:12px 0
+        }
+      } 
+        .edu{
+            display:flex;
+            align-items: center;
+            gap:6px;
+            // max-width:200px;
+
+            .year{
+                border-left-width: 2px;
+                padding:0 7px;
+                border-left-style: solid;
+            }
+
+            .course{
+                font-size: 12px;
+            }
+        }
+    }
 }
