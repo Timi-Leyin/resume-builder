@@ -9,6 +9,8 @@ import { useState } from "react";
 
 
 export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boolean})=>{
+ const [foreColor,setForeColor] = useState('#000')
+ 
   const Format = (command:string,value?:string ) => {
     document.execCommand(command,false,value)
   }
@@ -53,7 +55,10 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
           <button className="button"  onClick={()=> Format('outdent')}><FaOutdent /></button>
         
         
-          <button className="button"  onClick={()=> Format('foreColor')}><FaPalette /></button>
+          <button className="button fore-color-tool" style={{backgroundColor:foreColor}} onClick={()=> Format('foreColor',foreColor)}>
+          <input type="color" onChange={(e)=>  setForeColor(e.target.value)} name="foreColor" id="foreColor" />
+        <FaPalette />
+          </button>
         
         
           {/* <button className="button"></></button> */}
