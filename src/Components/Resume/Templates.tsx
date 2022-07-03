@@ -262,7 +262,7 @@ const Image = ()=>{
   )
 }
 
-export const ColorFul = ({edit}:{edit:boolean})=>{
+export const Colorful = ({edit}:{edit:boolean})=>{
   return(
     <Resume>
     <div className="colorful">
