@@ -1,6 +1,9 @@
+import './preloader.scss';
 
 export const Preloader = () => {
   return (
-    <div>Preloader</div>
+    <div id='preloader'>
+      <div className="loading-indicator --primary-color">Loading...</div>
+    </div>
   )
 }
