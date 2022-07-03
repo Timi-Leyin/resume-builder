@@ -4,8 +4,8 @@ import { FaAlignCenter, FaAlignLeft, FaAlignRight, FaBold, FaEye, FaFileImage, F
 import * as Template from '../../Components/Resume/Templates'
 import "./create.scss";
 import { Link, useParams } from "react-router-dom";
-import { useState } from "react";
-
+import { createRef, useEffect, useRef, useState } from "react";
+import ReactToPdf from 'react-to-pdf'
 
 
 export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boolean})=>{
@@ -14,6 +14,18 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
   const Format = (command:string,value?:string ) => {
     document.execCommand(command,false,value)
   }
+  let  targetRef =  document.body.querySelector('#resume') as HTMLElement;
+  console.log(targetRef,0)
+  useEffect(()=>{
+    targetRef= document.body.querySelector('#resume') as HTMLElement;
+
+    console.log(targetRef,' 1')
+    
+  },[preview,targetRef])
+  // 
+  // console.log(async()=>await targetRef());
+  // const ref = useRef((targetRef) as HTMLElement) ;
+  
   return(
     <div className="options-panel">
     <h1 className="logo">
@@ -87,16 +99,33 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
       </li>
 
       <li>
-        <button id="export">
-          <FaFilePdf />
-          <span> Export PDF</span>
-        </button>
+      {
+        (preview == false) && (
+          <ReactToPdf filename='resume.pdf' options={{
+            // format:[0,0]
+          }} targetRef={targetRef} scale={1.36}>
+            {
+              ({toPdf})=>(
+                <button id="export" onClick={toPdf}>
+                <FaFilePdf />
+                <span> Export PDF</span>
+              </button>
+                )
+            }
+          </ReactToPdf>
+        )
+      }
       </li>
       <li>
-        <button id="export" className="export-image">
-          <FaFileImage />
-          <span> Export Image</span>
-        </button>
+        {
+           (preview == false) && (
+            <button id="export" className="export-image">
+            <FaFileImage />
+            <span> Export Image</span>
+          </button>
+           )  
+        }
+       
       </li>
 
       {/* <li className="me">
@@ -106,18 +135,23 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
   </div>
   )
 } 
+
+
+
 const Create = () => {
   const {name} = useParams() as unknown as any ;
   let Resume_Template = Template[name]
-
+  
   let [preview, setPreview] = useState(false)
+
+ 
   return (
     <section id="resume-create">
 <Panel changePreview={()=> setPreview(!preview)} preview={preview} />
 
       <div className="resume-panel">
  
-<Resume_Template edit={preview} />
+<Resume_Template edit={preview}  />
 
      </div>
     </section>
@@ -125,3 +159,5 @@ const Create = () => {
 };
 
 export default Create;
+
+

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Clone, Resume } from './Resume'
 import './orea.scss';
 import './colorful.scss'
-import { FaEnvelope, FaMapMarked, FaMapMarkerAlt, FaMarker, FaPhone, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarked, FaMapMarkerAlt, FaMarker, FaPhone, FaTwitter, FaUser } from 'react-icons/fa';
 
 
 
@@ -145,10 +145,14 @@ const SectionRule = ({name,edit}:{name:string,edit:boolean})=>(
 </div>
 )
 
-export const Orea = ({edit}:{edit:boolean})=>{
+export const Orea = ({edit }:{edit:boolean})=>{
+  let el = useRef(null);
+  useEffect(()=>{
+    // console.log(el)
+  },[el])
   return(
     <Resume>
-    <div className="orea">
+    <div className="orea" ref={el} >
 
      <div className="header">
        <h1 className="head --primary-color" data-editable={edit} contentEditable={edit}>Keyur Vadher</h1>
@@ -250,11 +254,41 @@ export const Orea = ({edit}:{edit:boolean})=>{
 
 
 
-export const ColorFul = ()=>{
+const Image = ()=>{
+  return(
+    <span className='add-image'>
+      <input type="file" name="image" id="image" />
+    </span>
+  )
+}
+
+export const ColorFul = ({edit}:{edit:boolean})=>{
   return(
     <Resume>
     <div className="colorful">
-      
+      <div className="header">
+        <div className="avatar">
+    <span className="no-image">
+      <FaUser />
+    </span>
+        </div>
+        <div className="name">
+          <h1 className=' --primary-color' data-editable={edit} contentEditable={edit} >
+            Timi- Leyin
+          </h1>
+          <p className="role" data-editable={edit} contentEditable={edit}>Front end Developer</p>
+        </div>
+      </div>
+
+
+      <div className="body">
+
+    <div className="body-side-lt --primary-border-color"></div>
+
+
+    <div className="body-side-rt"></div>
+
+      </div>
     </div>
    </Resume>
   )
