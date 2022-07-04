@@ -70,8 +70,8 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
         
           <button className="button fore-color-tool" style={{backgroundColor:foreColor}} >
           <input type="color" onChange={(e)=>{
-         Format('foreColor',foreColor)
-          setForeColor(e.target.value)
+            setForeColor(e.target.value)
+            Format('foreColor',e.target.value)  
         }} name="foreColor" id="foreColor" />
         <FaPalette />
           </button>
