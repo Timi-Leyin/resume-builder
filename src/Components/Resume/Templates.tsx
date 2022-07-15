@@ -263,33 +263,11 @@ const Image = ()=>{
   )
 }
 
-export const Colorful = ({edit}:{edit:boolean})=>{
+export const Blank = ({edit}:{edit:boolean})=>{
   return(
     <Resume>
-    <div className="colorful">
-      <div className="header">
-        <div className="avatar">
-    <span className="no-image">
-      <FaUser />
-    </span>
-        </div>
-        <div className="name">
-          <h1 className=' --primary-color' data-editable={edit} contentEditable={edit} >
-            Timi- Leyin
-          </h1>
-          <p className="role" data-editable={edit} contentEditable={edit}>Front end Developer</p>
-        </div>
-      </div>
-
-
-      <div className="body">
-
-    <div className="body-side-lt --primary-border-color"></div>
-
-
-    <div className="body-side-rt"></div>
-
-      </div>
+    <div className="blank">
+    <div  data-editable={edit} contentEditable={edit}></div>
     </div>
    </Resume>
   )

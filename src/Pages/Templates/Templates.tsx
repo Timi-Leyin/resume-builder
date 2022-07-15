@@ -12,7 +12,7 @@ const Templates = () => {
 <Link to={'/create/Orea'} > Orea </Link>
 <Link to={'/create/Niko'} > Niko </Link>
 <Link to={'/create/Niko2'} > Niko2 </Link>
-<Link to={'/create/Colorful'} > ColorFul </Link>
+<Link to={'/create/Blank'} > Blank </Link>
 <Link to={'/create/Minimal'} > Minimal </Link>
 </div>
        </div>
