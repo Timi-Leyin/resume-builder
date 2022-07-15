@@ -5,11 +5,19 @@ import { Preloader } from "./Components/Preloader/Preloader";
 const PageNotFound = lazy(() => import("./Pages/PageNotFound"));
 const Templates = lazy(() => import("./Pages/Templates/Templates"));
 const Create = lazy(() => import("./Pages/Create/Create"));
+const Home = lazy(() => import("./Pages/Home/Home"));
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/"
+          element={
+            <Suspense fallback={<Preloader />}>
+              <Home />
+            </Suspense>
+          }
+        />
         <Route path="/templates"
           element={
             <Suspense fallback={<Preloader />}>
