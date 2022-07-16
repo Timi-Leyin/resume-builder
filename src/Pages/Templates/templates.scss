@@ -6,5 +6,9 @@ flex-wrap: wrap;
 &>*{
 // transform: scale(.5);
 transform-origin: 0;
+img{
+    width:300px;
+    padding:6px;
+}
 }
 }
