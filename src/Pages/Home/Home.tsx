@@ -79,7 +79,7 @@ gsap.to(".wheel", {
   },[-1])
 
 
-// gsap.to(".arrow", { y: 5, ease: "power1.inOut", repeat: -1, yoyo: true });
+gsap.to(".arrow", { y: 5, ease: "power1.inOut", repeat: -1, yoyo: true });
 
 
     // useEffect(()=>{
@@ -139,6 +139,8 @@ gsap.to(".wheel", {
 
          </div>
        </section>
+<div className="scroll-down">Scroll down<div className="arrow"></div></div>
+
     </section>
   )
 }
