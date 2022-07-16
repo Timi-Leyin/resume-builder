@@ -28,10 +28,12 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
   
   return(
     <div className="options-panel">
-    <h1 className="logo">
+  <Link to='/'>
+  <h1 className="logo">
       <p>Resume</p>
       <p>Builder</p>
     </h1>
+  </Link>
 
     <ul id="options">
       <li className="option">
@@ -96,11 +98,13 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
         const _colors =  document.querySelectorAll('.--primary-color');
         const _bg =  document.querySelectorAll('.--primary-bg');
         const _border =  document.querySelectorAll('.--primary-border-color');
+        const _icon =  document.querySelectorAll('.--icon-color');
           
-        
+        console.log(_icon)
         _colors.forEach((color)=> (color as HTMLElement).style.color = e.target.value)
         _bg.forEach((color)=> (color as HTMLElement).style.backgroundColor = e.target.value)
         _border.forEach((color)=> (color as HTMLElement).style.borderColor = e.target.value)
+        _icon.forEach((color)=> (color as SVGElement).style.color = e.target.value)
 
 
 
@@ -117,8 +121,9 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
       {
         (preview == false) && (
           <ReactToPdf filename='resume.pdf' options={{
-            // format:[0,0]
-          }} targetRef={targetRef} scale={1.36}>
+            format:[330, 450],
+            unit:'px'
+          }} targetRef={targetRef} scale={1}>
             {
               ({toPdf})=>(
                 <button id="export" onClick={toPdf}>

@@ -166,22 +166,22 @@ export const Orea = ({edit }:{edit:boolean})=>{
 <div className="introduction-section">
   <div className="intro-contact">
     <div className="contact">
-      <span className="icon --primary-color"><FaMapMarkerAlt /></span>
+      <span className="icon --primary-color"><FaMapMarkerAlt className='--icon-color' color='red' /></span>
      <span className="text" data-editable={edit} contentEditable={edit}>Lagos, Nigeria</span> </div>
 
     <div className="contact">
-    <span className="icon --primary-color"><FaEnvelope /></span>
+    <span className="icon --primary-color"><FaEnvelope className='--icon-color' color='red' /></span>
      <span className="text" data-editable={edit} contentEditable={edit}>envelope@email.me</span> </div>
 
 
 
     <div className="contact">
-      <span className="icon --primary-color"><FaPhone /></span>
+      <span className="icon --primary-color"><FaPhone className='--icon-color' color='red' /></span>
        <span className="text" data-editable={edit} contentEditable={edit}>+234 708 521 8197</span> </div>
 
     
        <div className="contact">
-      <span className="icon --primary-color"><FaTwitter /></span>
+      <span className="icon --primary-color"><FaTwitter className='--icon-color' color='red' /></span>
        <span className="text" data-editable={edit} contentEditable={edit}>@originalTimi</span></div>
 
 
@@ -291,7 +291,7 @@ export const Niko = ({edit}:{edit:boolean})=>{
 
               <div className="con">
                 <div className="icon">
-                  <FaIntercom />
+                  <FaIntercom color='#fff' />
                 </div>
 
                 <div className="info">
@@ -302,7 +302,7 @@ export const Niko = ({edit}:{edit:boolean})=>{
               </div>
               <div className="con">
                 <div className="icon">
-                  <FaPhone />
+                  <FaPhone color="#fff" />
                 </div>
 
                 <div className="info">
@@ -313,7 +313,7 @@ export const Niko = ({edit}:{edit:boolean})=>{
               </div>
               <div className="con">
                 <div className="icon">
-                  <FaMapMarked />
+                  <FaMapMarked color="#fff" />
                 </div>
 
                 <div className="info">
@@ -331,8 +331,8 @@ export const Niko = ({edit}:{edit:boolean})=>{
       <div className="about-intro">
       <div className="">
       <h1>
-          <p  data-editable={edit} contentEditable={edit}>JAMES KARY</p>
-          <p  data-editable={edit} contentEditable={edit}>GRAPHIC DESIGNER</p>
+          <p  data-editable={edit} contentEditable={edit}>TIMI LEYIN</p>
+          <p  data-editable={edit} contentEditable={edit}>WEB DESIGNER</p>
         </h1>
       </div>
 
@@ -356,12 +356,12 @@ export const Niko = ({edit}:{edit:boolean})=>{
 <div className="work-skills">
 
 <div className="skill">
-  <p  data-editable={edit} contentEditable={edit}>ADOBE PHOTOSHOP</p>
+  <p  data-editable={edit} contentEditable={edit}>FIGMA</p>
   <p><span  data-editable={edit} contentEditable={edit}>68</span>%</p>
 </div>
 <div className="skill">
-  <p  data-editable={edit} contentEditable={edit}>ADOBE PHOTOSHOP</p>
-  <p><span  data-editable={edit} contentEditable={edit}>68</span>%</p>
+  <p  data-editable={edit} contentEditable={edit}>TYPESCRIPT</p>
+  <p><span  data-editable={edit} contentEditable={edit}>70</span>%</p>
 </div>
 
 <div className="skill">
@@ -453,10 +453,7 @@ reading, hiking
       <div className="int small">
       <h3>Resume Builder</h3>
       
-        <small className='small'>Web app built with React, Node.js, and
-Express for visualizing personalized
-Spotify data such as top artists, tracks,
-recommendations, and audio features</small>
+        <small className='small'>Web app built with React,Typescript for creating resume easily with different templates and export to pdf easily</small>
        
       </div>
     </div>
@@ -485,7 +482,7 @@ recommendations, and audio features</small>
   
                 <div className="con">
                   <div className="icon">
-                    <FaIntercom />
+                    <FaIntercom  color='#fff' />
                   </div>
   
                   <div className="info">
@@ -496,7 +493,7 @@ recommendations, and audio features</small>
                 </div>
                 <div className="con">
                   <div className="icon">
-                    <FaPhone />
+                    <FaPhone  color='#fff' />
                   </div>
   
                   <div className="info">
@@ -507,7 +504,7 @@ recommendations, and audio features</small>
                 </div>
                 <div className="con">
                   <div className="icon">
-                    <FaMapMarked />
+                    <FaMapMarked  color='#fff' />
                   </div>
   
                   <div className="info">
@@ -647,10 +644,8 @@ recommendations, and audio features</small>
         <div className="int small">
         <h3>Resume Builder</h3>
         
-          <small className='small'>Web app built with React, Node.js, and
-  Express for visualizing personalized
-  Spotify data such as top artists, tracks,
-  recommendations, and audio features</small>
+        <p className='small'>Web app built with React,Typescript for creating resume easily with different templates and export to pdf easily</p>
+
          
         </div>
       </div>
