@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import { Clone, Resume } from './Resume'
 import './orea.scss';
-import './colorful.scss'
 import './niko.scss'
-import { FaEnvelope, FaIntercom, FaMapMarked, FaMapMarker, FaMapMarkerAlt, FaMarker, FaPhone, FaTwitter, FaUser } from 'react-icons/fa';
+import { FaEnvelope, FaIntercom, FaMapMarked, FaMapMarkerAlt, FaMarker, FaPhone, FaTwitter, FaUser } from 'react-icons/fa';
 
 
 
@@ -243,8 +242,10 @@ export const Orea = ({edit }:{edit:boolean})=>{
 </div>
 
 
-<SectionRule name='Interest' edit={edit} />
-
+<SectionRule name='skills' edit={edit} />
+    <div className='skills' data-editable={edit} contentEditable={edit}>
+      <p className='--primary-border-color'>Typescript</p>
+    </div>
 
 
 

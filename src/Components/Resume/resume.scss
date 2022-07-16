@@ -53,14 +53,14 @@
             flex:1
         }
         .r__name{
-          font-size: 1.9rem;
+          font-size: 2.5rem;
         }
         .r__role{
             font-weight:300
         }
 
         .r_address{
-            font-size:12px;
+            font-size:14px;
             align-self: flex-end;
             text-align: right;
             &> *{
@@ -94,7 +94,7 @@
     }
 
     .r_about{
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 10px;
     }
     .r_body{
@@ -112,14 +112,16 @@
             grid-template-columns: auto 1fr;
             justify-content:space-around;
             gap:5px;
+                font-size:20px;
+
 
             .date{
-                font-size:10px
+                font-size:12px
             }
         }
 
         .r_xp_body{
-            font-size:10px;
+            font-size:12px;
             margin:2px
         }
 
