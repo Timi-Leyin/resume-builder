@@ -17,6 +17,12 @@
             width:150px;
             margin:40px 0;
             list-style: none;
+            .glb-color{
+                input{
+                    position:absolute;
+                    opacity:0;
+                }
+            }
             &>li{
                 padding:10px 0;
                 cursor: pointer;

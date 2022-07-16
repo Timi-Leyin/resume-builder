@@ -91,7 +91,20 @@ export const Panel = ({changePreview,preview}:{changePreview?:any,preview?:boole
       </li>
 
 
-      <li className="option">
+      <li className="option glb-color">
+        <input type='color' onChange={(e)=>{
+        const _colors =  document.querySelectorAll('.--primary-color');
+        const _bg =  document.querySelectorAll('.--primary-bg');
+        const _border =  document.querySelectorAll('.--primary-border-color');
+          
+        
+        _colors.forEach((color)=> (color as HTMLElement).style.color = e.target.value)
+        _bg.forEach((color)=> (color as HTMLElement).style.backgroundColor = e.target.value)
+        _border.forEach((color)=> (color as HTMLElement).style.borderColor = e.target.value)
+
+
+
+        } }/>
         <span>
           <IoMdColorPalette />{" "}
         </span>
