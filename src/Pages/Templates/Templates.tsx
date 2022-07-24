@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './templates.scss'
-import '../Create/create.scss'
+
 import { Link } from 'react-router-dom';
 
 import orea from '../../Assets/orea.png'

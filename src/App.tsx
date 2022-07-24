@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Preloader } from "./Components/Preloader/Preloader";
-
+import './Pages/Create/create.scss'
 const PageNotFound = lazy(() => import("./Pages/PageNotFound"));
 const Templates = lazy(() => import("./Pages/Templates/Templates"));
 const Create = lazy(() => import("./Pages/Create/Create"));
