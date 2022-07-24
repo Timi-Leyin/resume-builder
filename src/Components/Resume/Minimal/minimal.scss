@@ -1,0 +1,86 @@
+.minimal{
+    
+    .r_header{
+        display: flex;
+        // align-items: center;
+        gap:20px;
+
+        .r_basic-info{
+            flex:1
+        }
+        .r__name{
+          font-size: 2.5rem;
+        }
+        .r__role{
+            font-weight:300
+        }
+
+        .r_address{
+            font-size:14px;
+            align-self: flex-end;
+            text-align: right;
+            &> *{
+                padding:1px 0;
+            }
+        }
+    }
+
+    .r-edu{
+        margin:10px 0;
+    }
+    .r__education{
+        margin:5px 0;
+     .r_edu_head{
+         display:flex;
+         align-items: center;
+         gap:10px;
+         h6{
+             font-size:12px;
+             flex:1
+         }
+
+         .year{
+        font-size: 12px;
+
+         }
+     }
+     .r_education_body{
+         font-size:12px
+     }
+    }
+
+    .r_about{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .r_body{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns:0.6fr 1fr;
+        gap:10px;
+
+        .xp-group{
+            margin:4px 0  10px 0;
+        }
+
+        .r_xp_head{
+            display:grid;
+            grid-template-columns: auto 1fr;
+            justify-content:space-around;
+            gap:5px;
+                font-size:20px;
+
+
+            .date{
+                font-size:12px
+            }
+        }
+
+        .r_xp_body{
+            font-size:12px;
+            margin:2px
+        }
+
+
+    }
+}
