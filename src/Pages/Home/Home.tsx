@@ -6,7 +6,7 @@ import img2 from '../../Assets/img-2.jpg'
 import img3 from '../../Assets/img-3.jpg'
 import gsap from 'gsap';
 import {FaStar, FaGithub } from 'react-icons/fa'
-import { ScrollTrigger } from 'gsap/scrollTrigger'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger);
 
