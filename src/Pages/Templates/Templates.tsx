@@ -4,7 +4,7 @@ import './templates.scss'
 
 import { Link } from 'react-router-dom';
 
-import orea from '../../Assets/orea.PNG'
+import orea from '../../Assets/orea.png'
 import niko from '../../Assets/niko.png'
 import niko2 from '../../Assets/niko2.png'
 import blank from '../../Assets/blank.png'
