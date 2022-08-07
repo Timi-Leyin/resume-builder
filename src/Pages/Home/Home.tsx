@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import'./home.scss';
-import img1 from '../../Assets/img-1.jpg'
-import img2 from '../../Assets/img-2.jpg'
-import img3 from '../../Assets/img-3.jpg'
+
 import gsap from 'gsap';
 import {FaStar, FaGithub } from 'react-icons/fa'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
@@ -115,23 +113,7 @@ gsap.to(".wheel", {
        <section id="spinner">
          <div className='wheel'>
 
-      <WheelCard src={img1} />
-      <WheelCard src={img2} />
-      <WheelCard src={img3} />
-      <WheelCard src={img1} />
-      <WheelCard src={img2} />
-      <WheelCard src={img1} />
-      <WheelCard src={img2} />
-      <WheelCard src={img3} />
-      <WheelCard src={img1} />
-      <WheelCard src={img2} />
-      <WheelCard src={img3} />
-      <WheelCard src={img1} />
-      <WheelCard src={img2} />
-      <WheelCard src={img3} />
-      <WheelCard src={img1} />
-      <WheelCard src={img2} />
-      <WheelCard src={img3} />
+      <WheelCard src='/images/img-1.jpg' />
 
 
          </div>
