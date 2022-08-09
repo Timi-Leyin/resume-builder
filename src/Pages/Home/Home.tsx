@@ -90,7 +90,7 @@ gsap.to(".wheel", {
                </h2>
            </div>
 
-          <a href='/templates'> <div className="star">
+          <a href='https://github.com/Timi-Leyin/resume-builder'> <div className="star">
            <FaStar /> Star on Github <FaGithub />
             </div> </a>
        </header>
@@ -104,8 +104,8 @@ gsap.to(".wheel", {
         <span className='_block'>a noise in the industry</span>
       </h1>
 
-     <p className='sub-heading'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea fuga possimus voluptatem quo doloribus sequi repellat corporis veritatis soluta </p>
-  <Link to='/templates'>  <button className='cta'>Get Started</button></Link>
+     <p className='sub-heading'>A Web app built with React,Typescript for creating resume easily with different templates and export to pdf easily.</p>
+  <Link to='/templates'><button className='cta'>Get Started</button></Link>
        </section>
 
 
@@ -113,7 +113,25 @@ gsap.to(".wheel", {
        <section id="spinner">
          <div className='wheel'>
 
+     
       <WheelCard src='/images/img-1.jpg' />
+      <WheelCard src='/images/img-2.jpg' />
+      <WheelCard src='/images/img-3.jpg' />
+      <WheelCard src='/images/img-1.jpg' />
+      <WheelCard src='/images/img-2.jpg' />
+      <WheelCard src='/images/img-3.jpg' />
+      <WheelCard src='/images/img-1.jpg' />
+      <WheelCard src='/images/img-2.jpg' />
+      <WheelCard src='/images/img-3.jpg' />
+      <WheelCard src='/images/img-1.jpg' />
+      <WheelCard src='/images/img-2.jpg' />
+      <WheelCard src='/images/img-3.jpg' />
+      <WheelCard src='/images/img-1.jpg' />
+      <WheelCard src='/images/img-2.jpg' />
+      <WheelCard src='/images/img-3.jpg' />
+      <WheelCard src='/images/img-1.jpg' />
+      <WheelCard src='/images/img-2.jpg' />
+      <WheelCard src='/images/img-3.jpg' />
 
 
          </div>

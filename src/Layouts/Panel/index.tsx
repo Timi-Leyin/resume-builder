@@ -7,10 +7,14 @@ import './panel.scss'
 
 export default  ({changePreview,preview}:{changePreview?:any,preview?:boolean})=>{
     const [foreColor,setForeColor] = useState('#000')
+    const [test,setLoad] = useState(false)
     
      const Format = (command:string,value?:string ) => {
        document.execCommand(command,false,value)
      }
+     useEffect(()=>{
+      setLoad(true)
+     },[])
      let  targetRef =  document.body.querySelector('#resume') as HTMLElement;
      console.log(targetRef,0)
      useEffect(()=>{
@@ -18,7 +22,7 @@ export default  ({changePreview,preview}:{changePreview?:any,preview?:boolean})=
    
        console.log(targetRef,' 1')
        
-     },[preview,targetRef])
+     },[test,preview,targetRef])
      // 
      // console.log(async()=>await targetRef());
      // const ref = useRef((targetRef) as HTMLElement) ;
