@@ -22,7 +22,25 @@
    grid-template-columns: 0.8fr 1fr; 
    gap:25px;
   
-
+    .avatar-control{
+        display:flex;
+        gap:30px;
+        .ctrl{
+            width:50px;
+            height:50px;
+            background:rgba(0,0,0,0.6);
+            border-radius:50px;
+            color:#fff;
+            display:flex;
+            cursor:pointer;
+            font-size:1.6rem;
+            justify-content:center;
+             align-items:center;
+             &:hover{
+                 opacity:.6
+             }
+        }
+    }
 
     .line{
         padding:1px;
@@ -36,14 +54,19 @@
 
    .img-avatar{
        width:100%;
-       height:200px;
+       height:150px;
        user-select: none;
+       position:relative;
        overflow:hidden;
        display:flex;
        justify-content:center;
        align-items:center;
-       pointer-events: none;
-       background-color: #eee;
+       background-size:contain;
+       background-position:center;
+       background-repeat:no-repeat;
+    //    pointer-events: none;
+    //    background-color: #eee;
+    //    padding:15px;
    }
 
    .user-intro{

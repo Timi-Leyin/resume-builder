@@ -1,15 +1,35 @@
+import { useState } from "react";
+import { FaFemale, FaMale } from "react-icons/fa";
+import random from "../../../Utils/random";
 import { Clone,Avatar, Resume } from "../Resume"
 import './scape.scss';
 
 export const Scape = ({edit}:{edit:boolean})=>{
+  const [avatarProps , setAvatar] = useState({
+    type:'male',
+    index:0
+  })
     return(
       <Resume>
       <div className="scape">
 
 
       <div>
-      <div className="img-avatar ">
-        <img src={Avatar()} alt="user avatar" width={230} />
+      <div className="img-avatar " style={{backgroundImage:`url(${Avatar(avatarProps.type,avatarProps.index)})`}}>
+        {
+          edit && (
+            <div className="avatar-control">
+              <div className="ctrl" onClick={()=>{
+                setAvatar({type:'male', index:random(3)})
+              }} title='Male'><FaMale /></div>
+
+              
+              <div className="ctrl" title='Female' onClick={()=>{
+                setAvatar({type:'female', index:random(4)})
+              }}><FaFemale /></div>
+            </div>
+          )
+        }
       </div>
       <h1 className="user-intro"  data-editable={edit} contentEditable={edit}>
         Discover my skills and expertise in creative area

@@ -8,14 +8,11 @@ const images= {
 }
 
 
-const random = (max:number)=> Math.floor(Math.random() * max - 0 + 0)
 
 // console.log(random(10))
 
-export const Avatar = (type='male',index?:number)=>{
-  const _rand = random(images[type].length)
-  console.log(_rand)
-  return (images[type][index || _rand])
+export const Avatar = (type='male',index=0)=>{
+  return (images[type][index])
 }
 
 export const Clone = ({children,edit}:{children:JSX.Element,edit:boolean})=>{
