@@ -37,6 +37,12 @@
    .img-avatar{
        width:100%;
        height:200px;
+       user-select: none;
+       overflow:hidden;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       pointer-events: none;
        background-color: #eee;
    }
 

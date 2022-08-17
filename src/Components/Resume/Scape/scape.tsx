@@ -1,4 +1,4 @@
-import { Clone, Resume } from "../Resume"
+import { Clone,Avatar, Resume } from "../Resume"
 import './scape.scss';
 
 export const Scape = ({edit}:{edit:boolean})=>{
@@ -8,7 +8,9 @@ export const Scape = ({edit}:{edit:boolean})=>{
 
 
       <div>
-      <div className="img-avatar"></div>
+      <div className="img-avatar ">
+        <img src={Avatar()} alt="user avatar" width={230} />
+      </div>
       <h1 className="user-intro"  data-editable={edit} contentEditable={edit}>
         Discover my skills and expertise in creative area
       </h1>
