@@ -1,0 +1,132 @@
+.line-bottom{
+    padding:1px;
+    margin:10px 0;
+}
+.bottom{
+ font-size:10px;
+ display:flex;
+ // text-align:center;
+ // justify-content:space-between;
+ padding:0 5px;
+ gap:10px;
+ >*{
+     display:flex;
+     flex-shrink:0;
+     gap:5px;
+ }
+}
+
+
+.scape{
+   display:grid;
+   grid-template-columns: 0.8fr 1fr; 
+   gap:25px;
+  
+
+
+    .line{
+        padding:1px;
+        width:30%
+    }
+
+    ._title{
+        font-size:1rem;
+        padding:10px 0;
+    }
+
+   .img-avatar{
+       width:100%;
+       height:200px;
+       background-color: #eee;
+   }
+
+   .user-intro{
+       padding:10px 0;
+    //    font-size:1.5rem
+   }
+
+
+   .skills{
+    background: rgb(230, 230, 230);
+    padding:20px;
+    border-radius:15px;
+    margin: 20px 0;
+    ul.ss_skills{
+        padding:8px 15px
+    }
+    .ss_skills{
+        padding:10px 0;
+        font-size:12px;
+        p{
+            display:flex;
+            padding:1px 0;
+            justify-content: space-between;
+            gap:5px;
+            
+        }
+    }
+   }
+
+
+
+   .contact{
+       font-size:12px;
+
+       >*{
+           padding: 10px 0;
+       }
+   }
+
+   .head{
+       .name{
+           font-size:1.52rem;
+       }
+       .role, .about{
+           font-size: 12px;
+       }
+       .about{
+           padding:25px 0
+       }
+   }
+
+   .edu{
+       padding:10px 0;
+       .edu_item{
+           padding:6px 0 ;
+           h5{
+               font-size:12px
+           }
+           p{
+               font-size:10px
+           }
+       }
+   }
+
+
+   .experience{
+       .experience_item{
+           padding:10px 0;
+           .title{
+               font-size:12px
+           }
+           .loc{
+               font-size:10px;
+           }
+
+           .job_desc{
+               padding:15px 0;
+               font-size:13px;
+               font-style:italic
+           }
+           .job_d{
+               font-size:11px;
+               margin-left:10px;
+               > *{
+                   padding:2px 0
+               }
+           }
+       }
+    }
+    
+    
+    }

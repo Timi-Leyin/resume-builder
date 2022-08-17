@@ -18,7 +18,7 @@ const Templates = () => {
 <Link to={'/create/blank'} > <img src='/images/blank.png'  alt="Blank" /> </Link>
 <Link to={'/create/nikoDark'} >  <img src='/images/niko2.png' alt="Niko2" />  </Link>
 <Link to={'/create/minimal'} >  <img src='/images/minimal.png' alt="Minimal" />  </Link>
-{/* <Link to={'/create/scape'} >  <img src={} alt="Scape" />  </Link> */}
+<Link to={'/create/scape'} >  <img src='/ima' alt="Scape" />  </Link>
 </div>
        </div>
 
