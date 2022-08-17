@@ -20,12 +20,12 @@ export const Scape = ({edit}:{edit:boolean})=>{
           edit && (
             <div className="avatar-control">
               <div className="ctrl" onClick={()=>{
-                setAvatar({type:'male', index:random(3)})
+                setAvatar({type:'male', index:random(8)})
               }} title='Male'><FaMale /></div>
 
               
               <div className="ctrl" title='Female' onClick={()=>{
-                setAvatar({type:'female', index:random(4)})
+                setAvatar({type:'female', index:random(7)})
               }}><FaFemale /></div>
             </div>
           )

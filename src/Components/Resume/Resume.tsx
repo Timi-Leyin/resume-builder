@@ -3,8 +3,8 @@ import { FaMinus, FaPlus } from 'react-icons/fa';
 import './resume.scss';
 
 const images= {
-  female:['/images/avatar/female-1.png', '/images/avatar/female-2.png', '/images/avatar/female-3.png', '/images/avatar/female-4.png' ],
-  male:['/images/avatar/male-1.png', '/images/avatar/male-2.png', '/images/avatar/male-3.png']
+  female:['/images/avatar/female-1.png', '/images/avatar/female-2.png', '/images/avatar/female-3.png', '/images/avatar/female-4.png', '/images/avatar/female-5.png', '/images/avatar/female-6.png', '/images/avatar/female-7.png' ],
+  male:['/images/avatar/male-1.png', '/images/avatar/male-2.png', '/images/avatar/male-3.png', '/images/avatar/male-4.png', '/images/avatar/male-5.png', '/images/avatar/male-6.png', '/images/avatar/male-7.png', '/images/avatar/male-8.png']
 }
 
 
