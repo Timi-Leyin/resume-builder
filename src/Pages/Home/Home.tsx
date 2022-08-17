@@ -114,24 +114,34 @@ gsap.to(".wheel", {
          <div className='wheel'>
 
      
-      <WheelCard src='/images/img-1.jpg' />
-      <WheelCard src='/images/img-2.jpg' />
-      <WheelCard src='/images/img-3.jpg' />
-      <WheelCard src='/images/img-1.jpg' />
-      <WheelCard src='/images/img-2.jpg' />
-      <WheelCard src='/images/img-3.jpg' />
-      <WheelCard src='/images/img-1.jpg' />
-      <WheelCard src='/images/img-2.jpg' />
-      <WheelCard src='/images/img-3.jpg' />
-      <WheelCard src='/images/img-1.jpg' />
-      <WheelCard src='/images/img-2.jpg' />
-      <WheelCard src='/images/img-3.jpg' />
-      <WheelCard src='/images/img-1.jpg' />
-      <WheelCard src='/images/img-2.jpg' />
-      <WheelCard src='/images/img-3.jpg' />
-      <WheelCard src='/images/img-1.jpg' />
-      <WheelCard src='/images/img-2.jpg' />
-      <WheelCard src='/images/img-3.jpg' />
+      <WheelCard src='/images/avatar/female-1.png' />
+      <WheelCard src='/images/avatar/male-1.png' />
+
+      <WheelCard src='/images/avatar/male-2.png' />
+      <WheelCard src='/images/avatar/female-2.png' />
+
+      <WheelCard src='/images/avatar/male-3.png' />
+      <WheelCard src='/images/avatar/female-3.png' />
+
+      <WheelCard src='/images/avatar/male-4.png' />
+      <WheelCard src='/images/avatar/female-4.png' />
+
+      <WheelCard src='/images/avatar/male-5.png' />
+      <WheelCard src='/images/avatar/female-5.png' />
+
+      <WheelCard src='/images/avatar/male-6.png' />
+      <WheelCard src='/images/avatar/female-6.png' />
+
+      <WheelCard src='/images/avatar/male-7.png' />
+      <WheelCard src='/images/avatar/female-7.png' />
+      
+      {/* male */}
+
+
+      <WheelCard src='/images/avatar/male-8.png' />
+
+      <WheelCard src='/images/avatar/male-2.png' />
+      <WheelCard src='/images/avatar/male-2.png' />
 
 
          </div>
