@@ -150,7 +150,7 @@ export default  ({changePreview,preview}:{changePreview?:any,preview?:boolean})=
          </li> */}
    
          <li className="me">
-                <p>Made with <FaHeart style={{color:'red'}} />  by  <a style={{textDecoration:'underline'}} target='_blank' href="https://timileyin.netlify.app">me</a> </p>
+                <p>Made with <FaHeart style={{color:'red'}} />  by  <a style={{textDecoration:'underline'}} target='_blank' href="https://timileyin.netlify.app">Timi-Leyin</a> </p>
             </li>
        </ul>
      </div>
