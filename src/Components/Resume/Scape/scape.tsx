@@ -39,12 +39,12 @@ export const Scape = ({edit}:{edit:boolean})=>{
 
       <div className="skills">
       <div className="s_skills">
-        <h4>Software Skills</h4>
+        <h4  data-editable={edit} contentEditable={edit}>Software Skills</h4>
 
         <div className="ss_skills">
          <Clone edit={edit}>
-         <p><span>Graphics & Illustration</span> 
-          <span>90%</span></p>
+         <p><span  data-editable={edit} contentEditable={edit} >Graphics & Illustration</span> 
+          <span  data-editable={edit} contentEditable={edit}>90%</span></p>
          </Clone>
         </div>
       </div>
@@ -52,11 +52,11 @@ export const Scape = ({edit}:{edit:boolean})=>{
 
 
       <div className="s_skills">
-        <h4>Expertise</h4>
+        <h4  data-editable={edit} contentEditable={edit}>Expertise</h4>
 
         <ul className="ss_skills">
          <Clone edit={edit}>
-         <li><span>Sketching</span></li>
+         <li  data-editable={edit} contentEditable={edit}><span>Sketching</span></li>
          </Clone>
         </ul>
       </div>
@@ -66,15 +66,15 @@ export const Scape = ({edit}:{edit:boolean})=>{
       </div>
 
 
-        <h5>Contact me ~ </h5>
+        <h5  data-editable={edit} contentEditable={edit}>Contact me ~ </h5>
       <div className="contact">
 
-        <p>
+        <p  data-editable={edit} contentEditable={edit}>
       Block 23D5 ipsum dolor sit amet consectetur elit, Consectetur, impedit!, Nigeria
         </p>
        <div>
-       <p>email: hello@timi.dev</p>
-       <p>call me: (234) 708 521 8197</p>
+       <p  data-editable={edit} contentEditable={edit}>email: hello@timi.dev</p>
+       <p  data-editable={edit} contentEditable={edit}>call me: (234) 708 521 8197</p>
        </div>
       </div>
 
@@ -86,26 +86,26 @@ export const Scape = ({edit}:{edit:boolean})=>{
       <div className="">
 
      <div className="head">
-     <h2 className="name --primary-color">
+     <h2 className="name --primary-color" data-editable={edit} contentEditable={edit}>
         Thomas A.Conwell
       </h2>
-      <p className="role">Senior Software Developer</p>
+      <p className="role"  data-editable={edit} contentEditable={edit}>Senior Software Developer</p>
 
-      <p className="about">
+      <p className="about"  data-editable={edit} contentEditable={edit}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium voluptas quas? Numquam, dolores ratione, iure voluptas temporibus incidunt, commodi vel mollitia repudiandae id minus!
       </p>
      </div>
 
 <div className="top">
   <div className="line --primary-bg"></div>
-<h1 className="_title">Education & Certificate</h1>
+<h1 className="_title"  data-editable={edit} contentEditable={edit}>Education & Certificate</h1>
 </div>
 
 <div className='edu'>
 <Clone edit={edit}>
   <div className='edu_item'>
-    <h5>Bachelors in Visual Arts</h5>
-    <p>The School of Art / chicago / 2009 - 2013 </p>
+    <h5 data-editable={edit} contentEditable={edit}>Bachelors in Visual Arts</h5>
+    <p  data-editable={edit} contentEditable={edit}>The School of Art / chicago / 2009 - 2013 </p>
   </div>
 </Clone>
 </div>
@@ -113,7 +113,7 @@ export const Scape = ({edit}:{edit:boolean})=>{
 
 <div className="top">
 <div className="line --primary-bg"></div>
-<h1 className="_title">Work Experience</h1>
+<h1 className="_title"  data-editable={edit} contentEditable={edit}>Work Experience</h1>
 </div>
 
 <ul className='experience'>
@@ -122,15 +122,19 @@ export const Scape = ({edit}:{edit:boolean})=>{
     <li className="experience_item">
       
       <div className="">
-        <p className='title'> Senior<b> Graphics Designer</b></p>
-        <p className='loc'>Creative Mind inc / Canada / 2012- 2018</p>
+        <p className='title'  data-editable={edit} contentEditable={edit}> Senior<b> Graphics Designer</b></p>
+        <p className='loc'>
+          <span  data-editable={edit} contentEditable={edit}> Creative Mind inc</span> /
+          <span  data-editable={edit} contentEditable={edit}> Canada</span> /
+          <span  data-editable={edit} contentEditable={edit}> 2012- 2018</span>
+          </p>
       </div>
 
       <div className="job_desc">
-        <p className="t">Job Description</p>
+        <p className="t"  data-editable={edit} contentEditable={edit}>Job Description</p>
       </div>
 
-      <div className="job_d">
+      <div className="job_d"  data-editable={edit} contentEditable={edit}>
         <p>- Lorem ipsum dolor, sit amet hetau aka </p>
         <p>- Lorem ipsum dolor, sit amet hetau aka </p>
       </div>
@@ -147,9 +151,9 @@ export const Scape = ({edit}:{edit:boolean})=>{
       <div className="">
         <div className="line-bottom --primary-bg"></div>
         <div className="bottom">
-          <p><b>My Resume </b> <span>Behance/Timi-Leyin</span></p>
+          <p><b  data-editable={edit} contentEditable={edit}>My Resume </b> <span  data-editable={edit} contentEditable={edit}>Behance/Timi-Leyin</span></p>
         
-          <p><b>Facebook </b> <span>Facebook/Timi-Leyin</span></p>
+          <p><b  data-editable={edit} contentEditable={edit}>Facebook </b> <span  data-editable={edit} contentEditable={edit}>Facebook/Timi-Leyin</span></p>
         
         </div>
       </div>
