@@ -42,7 +42,9 @@ export const Scoop = ({edit }:{edit:boolean}) => {
        <div className="xp">
        <h3 className='title'>Work Experience</h3>
 
-       <div className="exp">
+
+        <Clone edit={edit}>
+        <div className="exp">
            <div className="info">
                <h5 className='year'>Year</h5>
                <p>2010 - 2022 </p>
@@ -55,13 +57,17 @@ export const Scoop = ({edit }:{edit:boolean}) => {
                </div>
            </div>
        </div>
+        </Clone>
+
+
        </div>
 
 
        <div className="edu">
 <div className="xp">
        <h3 className='title'>Education</h3>
-       <div className="exp">
+      <Clone edit={edit}>
+      <div className="exp">
            <div className="info">
                <h5 className='year'>Year</h5>
                <p>2010 - 2022 </p>
@@ -78,6 +84,7 @@ export const Scoop = ({edit }:{edit:boolean}) => {
                </div>
            </div>
        </div>
+      </Clone>
 </div>
       
 
@@ -109,12 +116,14 @@ export const Scoop = ({edit }:{edit:boolean}) => {
 
     <div className="ref">
         <h3 className="title">Reference</h3>
-        <div className="REF">
+       <Clone edit={edit}>
+       <div className="REF">
             <h4 className="r_name">RESUME BUILDER</h4>
             <p className="text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste.
             </p>
         </div>
+       </Clone>
     </div>
 
     </div>
