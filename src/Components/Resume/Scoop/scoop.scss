@@ -27,6 +27,8 @@
         .contacts{
             padding-top:10px;
             font-size: 10px;
+            // justify-content:center;
+            // place-content: flex-start;
             display:flex;
             gap:8px 25px;
             flex-wrap:wrap;
@@ -35,5 +37,82 @@
 
 
     // WORK XP & INTERESTS CONTAINER
+    .container-grid{
 
+        display:grid;
+        grid-gap:20px;
+        margin:25px 0;
+        grid-template-columns: auto 1fr;
+        
+        // nested utility
+        .title{
+            font-weight:600;
+            letter-spacing:3px;
+        }
+
+
+
+        .exp{
+            display:flex;
+            gap:20px;
+            margin:20px 0;
+            font-size:12px;
+
+            .full{
+            // width:100%;
+            flex:1
+            }
+
+            .info{
+                // width:250px;
+            }
+
+            .job_title{
+                font-weight:700;
+                letter-spacing:3px;
+                &.sch{
+                    font-size:600;
+                    padding:4px 0;
+                }
+            }
+
+            .job_desc{
+                padding:4px 0;
+            }
+        }
+
+      
+
+
+
+
+        .grid-col-2{
+            margin:0 10px;
+            .i_title{
+                font-weight:500;
+                letter-spacing:2px;
+            }
+            .interest{
+                font-size:17px;
+                padding:10px 0;
+                ul{
+                padding:5px 0;
+                font-size: 12px;
+                }
+            }
+
+            .ref{
+                .REF{
+                    padding:10px 0;
+                }
+                .r_name{
+                   font-size:12px 
+                }
+                .text{
+                    font-size:10px
+                }
+            }
+        }
+
+    }
 }
