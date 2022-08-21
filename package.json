@@ -2,7 +2,7 @@
   "name": "resume-builderr",
   "description": "Web app built with React,Typescript for creating resume easily with different templates and export to pdf easily",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.1.1",
   "scripts": {
     "start": "vite --host",
     "dev": "vite",
