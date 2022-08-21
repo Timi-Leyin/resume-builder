@@ -1,0 +1,39 @@
+.scoop{
+    // utility
+    .text-center{
+        // text-align:center;
+    }
+
+
+
+    // main
+    .intro{
+        .about{
+            .name{
+                font-weight:300;
+                font-size:2.2rem;
+                letter-spacing:2px;
+                word-spacing:10px;
+            }
+            .role{
+            font-weight:300;
+            font-size:10px;
+            padding:6px 0;
+            // text-align:left;
+            letter-spacing:4px;
+            }
+        }
+
+        .contacts{
+            padding-top:10px;
+            font-size: 10px;
+            display:flex;
+            gap:8px 25px;
+            flex-wrap:wrap;
+        }
+    }
+
+
+    // WORK XP & INTERESTS CONTAINER
+
+}
