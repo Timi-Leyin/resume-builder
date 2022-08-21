@@ -115,7 +115,7 @@ export const Scoop = ({edit }:{edit:boolean}) => {
 
 
     <div className="ref">
-        <h3 className="title">Reference</h3>
+        <h3 className="title">Projects</h3>
        <Clone edit={edit}>
        <div className="REF">
             <h4 className="r_name">RESUME BUILDER</h4>
