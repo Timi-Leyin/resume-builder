@@ -8,7 +8,7 @@ export const Scoop = ({edit }:{edit:boolean}) => {
 
     <div className="intro">
        <div className="about text-center">
-       <h1 className="name" data-editable={edit} contentEditable={edit}>Great Ihevueme</h1>
+       <h1 className="name --primary-color" data-editable={edit} contentEditable={edit}>Great Ihevueme</h1>
         <h5 className='role' data-editable={edit} contentEditable={edit}>Senior Odogwu Developer</h5>
        </div>
 
@@ -40,7 +40,7 @@ export const Scoop = ({edit }:{edit:boolean}) => {
 
     <div className="grid-col-1">
        <div className="xp">
-       <h3 className='title' data-editable={edit} contentEditable={edit}>Work Experience</h3>
+       <h3 className='title --primary-color' data-editable={edit} contentEditable={edit}>Work Experience</h3>
 
 
         <Clone edit={edit}>
@@ -51,7 +51,7 @@ export const Scoop = ({edit }:{edit:boolean}) => {
            </div>
 
            <div className="full">
-               <h4 className="job_title" data-editable={edit} contentEditable={edit}>JOB TITLE HERE | COMPANY</h4>
+               <h4 className="job_title --primary-color" data-editable={edit} contentEditable={edit}>JOB TITLE HERE | COMPANY</h4>
                <div className="job_desc" data-editable={edit} contentEditable={edit}>
                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos inventore voluptatum nam vel minima maiores animi deleniti amet accusamus?
                </div>
@@ -65,7 +65,7 @@ export const Scoop = ({edit }:{edit:boolean}) => {
 
        <div className="edu">
 <div className="xp">
-       <h3 className='title' data-editable={edit} contentEditable={edit}>Education</h3>
+       <h3 className='title --primary-color' data-editable={edit} contentEditable={edit}>Education</h3>
       <Clone edit={edit}>
       <div className="exp">
            <div className="info">
@@ -74,7 +74,7 @@ export const Scoop = ({edit }:{edit:boolean}) => {
            </div>
 
            <div className="full">
-               <h4 className="job_title" data-editable={edit} contentEditable={edit}>JOB TITLE HERE | COMPANY</h4>
+               <h4 className="job_title --primary-color" data-editable={edit} contentEditable={edit}>JOB TITLE HERE | COMPANY</h4>
                <div className="job_title sch">
                <h5 data-editable={edit} contentEditable={edit}> UNIVERSITY OF ODOGWU</h5>
                <h5 className='' data-editable={edit} contentEditable={edit}> UX DESIGN & DEVELOPMENT</h5>
@@ -103,7 +103,7 @@ export const Scoop = ({edit }:{edit:boolean}) => {
     <div className="grid-col-2">
 
     <div className="interests">
-       <h3 className='title' data-editable={edit} contentEditable={edit}>Skills</h3>
+       <h3 className='title --primary-color' data-editable={edit} contentEditable={edit}>Skills</h3>
        <div className="interest" data-editable={edit} contentEditable={edit}>
            <h5 className='i_title'>Software</h5>
            <ul>
@@ -115,7 +115,7 @@ export const Scoop = ({edit }:{edit:boolean}) => {
 
 
     <div className="ref">
-        <h3 className="title" data-editable={edit} contentEditable={edit}>Projects</h3>
+        <h3 className="title --primary-color" data-editable={edit} contentEditable={edit}>Projects</h3>
        <Clone edit={edit}>
        <div className="REF" data-editable={edit} contentEditable={edit}>
             <h4 className="r_name">RESUME BUILDER</h4>
