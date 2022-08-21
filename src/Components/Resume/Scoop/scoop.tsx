@@ -103,9 +103,9 @@ export const Scoop = ({edit }:{edit:boolean}) => {
     <div className="grid-col-2">
 
     <div className="interests">
-       <h3 className='title'>Interests</h3>
+       <h3 className='title'>Skills</h3>
        <div className="interest">
-           <h5 className='i_title'>Hobbies</h5>
+           <h5 className='i_title'>Software</h5>
            <ul>
                <li>Video Games</li>
                <li>Video Games</li>

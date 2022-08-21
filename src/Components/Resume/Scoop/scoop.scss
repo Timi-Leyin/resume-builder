@@ -37,7 +37,7 @@
     .container-grid{
 
         display:grid;
-        grid-gap:20px;
+        grid-gap:15px;
         margin:25px 0;
         grid-template-columns: auto 1fr;
         
@@ -81,7 +81,7 @@
 
 
         .grid-col-2{
-            margin:0 10px;
+            margin:0 0 10px 0;
             .i_title{
                 font-weight:500;
                 letter-spacing:2px;
@@ -97,7 +97,7 @@
 
             .ref{
                 .REF{
-                    padding:10px 0;
+                    padding:5px 0;
                 }
                 .r_name{
                    font-size:12px 
