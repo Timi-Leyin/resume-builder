@@ -1,8 +1,8 @@
 .scoop{
     // utility
-    .text-center{
-        // text-align:center;
-    }
+    // .text-center{
+    //     text-align:center;
+    // }
 
 
 
@@ -19,7 +19,6 @@
             font-weight:300;
             font-size:10px;
             padding:6px 0;
-            // text-align:left;
             letter-spacing:4px;
             }
         }
@@ -27,8 +26,6 @@
         .contacts{
             padding-top:10px;
             font-size: 10px;
-            // justify-content:center;
-            // place-content: flex-start;
             display:flex;
             gap:8px 25px;
             flex-wrap:wrap;
@@ -59,13 +56,10 @@
             font-size:12px;
 
             .full{
-            // width:100%;
             flex:1
             }
 
-            .info{
-                // width:250px;
-            }
+            
 
             .job_title{
                 font-weight:700;
