@@ -53,15 +53,20 @@
   }
 
 
+
   .about{
     //   height:inherit;
     //   opacity:.3;
       .about-intro{
           display:flex;
           flex-direction: column;
-          &>*:first-child{
+          margin:10px 0;
+          h1>*:first-child{
               font-size: 1.4rem;
-              margin:10px 0;
+          }
+          h1>*:last-child{
+              font-size: 0.8rem;
+              margin-bottom:10px;
           }
          
       }
