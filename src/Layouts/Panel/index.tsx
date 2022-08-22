@@ -1,13 +1,16 @@
 import { useState, useEffect, Fragment } from "react";
-import { FaUndo, FaRedo, FaBold, FaUnderline, FaStrikethrough, FaListOl, FaListUl, FaAlignLeft, FaAlignCenter, FaAlignRight, FaRulerHorizontal, FaIndent, FaOutdent, FaPalette, FaPen, FaEye, FaFilePdf, FaHeart } from "react-icons/fa";
+import { FaUndo, FaRedo, FaBold, FaUnderline, FaStrikethrough, FaListOl, FaListUl, FaAlignLeft, FaAlignCenter, FaAlignRight, FaRulerHorizontal, FaIndent, FaOutdent, FaPalette, FaPen, FaEye, FaFilePdf, FaHeart, FaFileImage } from "react-icons/fa";
 import { IoMdGrid, IoMdColorPalette } from "react-icons/io";
 import { Link } from "react-router-dom";
+import html2canvas from 'html2canvas';
+
 import  ReactToPdf  from 'react-to-pdf'
 import './panel.scss'
 
 export default  ({changePreview,preview}:{changePreview?:any,preview?:boolean})=>{
     const [foreColor,setForeColor] = useState('#000')
-    const [test,setLoad] = useState(false)
+    const [_init,setLoad] = useState(false);
+
     
      const Format = (command:string,value?:string ) => {
        document.execCommand(command,false,value)
@@ -22,10 +25,17 @@ export default  ({changePreview,preview}:{changePreview?:any,preview?:boolean})=
    
        console.log(targetRef,' 1')
        
-     },[test,preview,targetRef])
+     },[_init,preview,targetRef])
      // 
-     // console.log(async()=>await targetRef());
-     // const ref = useRef((targetRef) as HTMLElement) ;
+   const exportImage = ()=>{
+     html2canvas(targetRef).then(canvas=>{
+    const img = canvas.toDataURL('image/png'),
+    download = document.createElement('a');
+    download.href=img;
+    download.download = 'resume.png'
+    download.click()
+     })
+   }
      
      return(
        <div className="options-panel">
@@ -137,17 +147,17 @@ export default  ({changePreview,preview}:{changePreview?:any,preview?:boolean})=
            )
          }
          </li>
-         {/* <li>
+         <li>
            {
               (preview == false) && (
-               <button id="export" className="export-image">
+               <button id="export" onClick={exportImage} className="export-image">
                <FaFileImage />
                <span> Export Image</span>
              </button>
               )  
            }
           
-         </li> */}
+         </li>
    
          <li className="me">
                 <p>Made with <FaHeart style={{color:'red'}} />  by  <a style={{textDecoration:'underline'}} target='_blank' href="https://timileyin.netlify.app">Timi-Leyin</a> </p>
