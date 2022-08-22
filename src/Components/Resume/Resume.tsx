@@ -9,7 +9,6 @@ const images= {
 
 
 
-// console.log(random(10))
 
 export const Avatar = (type='male',index=0)=>{
   return (images[type][index])
@@ -18,7 +17,7 @@ export const Avatar = (type='male',index=0)=>{
 export const Clone = ({children,edit}:{children:JSX.Element,edit:boolean})=>{
   let [cloned, clone] = useState<ReactNode[]>([])
  useEffect(()=>{
-  //  console.log(document.querySelectorAll(".cloned [contenteditable]"),'all')
+console.clear()
  document.querySelectorAll('.cloned [contenteditable]').forEach(element => {
    element.setAttribute('contenteditable',(edit ? 'true' : 'false'));
    element.setAttribute('data-editable',(edit ? 'true' : 'false'));

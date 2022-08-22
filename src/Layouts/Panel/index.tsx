@@ -19,11 +19,11 @@ export default  ({changePreview,preview}:{changePreview?:any,preview?:boolean})=
       setLoad(true)
      },[])
      let  targetRef =  document.body.querySelector('#resume') as HTMLElement;
-     console.log(targetRef,0)
+
      useEffect(()=>{
        targetRef= document.body.querySelector('#resume') as HTMLElement;
    
-       console.log(targetRef,' 1')
+      console.clear()
        
      },[_init,preview,targetRef])
      // 
